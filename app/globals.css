@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@theme inline { --color-background: #f8f7f3; --color-foreground: #242521; --color-card: #ffffff; --color-muted: #e9e8e2; --color-muted-foreground: #6b6d65; --color-primary: #b87333; --color-primary-foreground: #fffaf4; --color-border: #deded5; --font-sans: 'Arial', sans-serif; --font-serif: 'Georgia', serif; }
+@theme inline { --color-background: #f8f7f3; --color-foreground: #242521; --color-card: #ffffff; --color-muted: #e9e8e2; --color-muted-foreground: #6b6d65; --color-primary: #b87333; --color-primary-foreground: #fffaf4; --color-border: #deded5; --font-sans: 'Arial', sans-serif; --font-serif: 'Georgia', serif; --font-devanagari: 'Noto Sans Devanagari', sans-serif; }
 :root { color-scheme: light; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; background: #f8f7f3; }
@@ -8,3 +8,4 @@ body { margin: 0; background: #f8f7f3; color: #242521; font-family: Arial, sans-
 ::selection { background: #b87333; color: #fffaf4; }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 .animate-rise { animation: rise .7s ease-out both; }
+.font-devanagari { font-family: var(--font-devanagari), sans-serif; }
