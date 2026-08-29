@@ -15,8 +15,8 @@ export default function OpengraphImage() {
           flexDirection: 'column',
           justifyContent: 'center',
           padding: '80px',
-          background: '#f8f7f3',
-          color: '#242521',
+          background: '#ffffff',
+          color: '#163449',
         }}
       >
         <p
@@ -26,7 +26,7 @@ export default function OpengraphImage() {
             fontWeight: 700,
             letterSpacing: 4,
             textTransform: 'uppercase',
-            color: '#b87333',
+            color: '#0ea5e9',
           }}
         >
           Manimajra, Chandigarh
@@ -43,7 +43,7 @@ export default function OpengraphImage() {
         >
           False Ceiling Contractor in Chandigarh
         </p>
-        <p style={{ margin: '28px 0 0', fontSize: 32, color: '#6b6d65', maxWidth: 900 }}>
+        <p style={{ margin: '28px 0 0', fontSize: 32, color: '#5b7893', maxWidth: 900 }}>
           Gypsum False Ceiling, PVC Ceiling, WPC Wall Paneling &amp; Wall Partition Services
         </p>
         <div style={{ display: 'flex', alignItems: 'center', marginTop: 56 }}>
@@ -55,8 +55,8 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: 28,
-              background: '#b87333',
-              color: '#fffaf4',
+              background: '#0ea5e9',
+              color: '#ffffff',
               fontSize: 22,
               fontWeight: 700,
               fontFamily: 'Georgia, serif',
@@ -66,7 +66,7 @@ export default function OpengraphImage() {
             FC
           </div>
           <p style={{ margin: 0, fontSize: 28, fontWeight: 700 }}>
-            FALSE CEILING <span style={{ color: '#b87333' }}>SERVICE</span>
+            FALSE CEILING <span style={{ color: '#0ea5e9' }}>SERVICE</span>
           </p>
         </div>
       </div>
