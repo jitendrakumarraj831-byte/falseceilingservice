@@ -7,13 +7,8 @@ Yahan har service ke liye ek alag folder hai. Real project photos yahan upload k
 | Folder | Service |
 |---|---|
 | `gypsum-false-ceiling/` | Gypsum False Ceiling |
-| `pvc-ceiling/` | PVC Ceiling |
-| `pvc-wall-paneling/` | PVC Wall Paneling |
-| `wpc-wall-paneling/` | WPC Wall Paneling |
-| `wpc-fluted-panels/` | WPC Fluted Panels |
-| `grid-ceiling/` | Grid Ceiling |
+| `pvc-false-ceiling/` | PVC False Ceiling |
 | `wall-partition/` | Wall Partition |
-| `tv-unit-interior-work/` | TV Unit & Interior Work |
 
 ## Photo upload karte waqt
 
