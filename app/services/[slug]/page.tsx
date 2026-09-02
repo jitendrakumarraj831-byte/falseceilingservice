@@ -20,13 +20,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!service) return {}
   const title = `${service.name} in Chandigarh | Arbaz`
   const url = `${SITE_URL}/services/${service.slug}`
-  const heroAlt = service.photoCount > 0 ? getPhotoAlt(service.slug, 1) : service.name
   return {
     title,
     description: service.descriptionEn,
     alternates: { canonical: url },
-    openGraph: { title, description: service.descriptionEn, url, type: 'website', locale: 'en_IN', images: service.photoCount > 0 ? [{ url: img(`${service.slug}/1.jpg`), width: 736, height: 981, alt: heroAlt }] : undefined },
-    twitter: { card: 'summary_large_image', title, description: service.descriptionEn, images: service.photoCount > 0 ? [img(`${service.slug}/1.jpg`)] : undefined },
+    openGraph: { title, description: service.descriptionEn, url, type: 'website', locale: 'en_IN' },
+    twitter: { card: 'summary_large_image', title, description: service.descriptionEn },
   }
 }
 
