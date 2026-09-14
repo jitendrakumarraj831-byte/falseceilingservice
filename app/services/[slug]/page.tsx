@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title,
     description: service.descriptionEn,
     alternates: { canonical: url },
-    openGraph: { title, description: service.descriptionEn, url, type: 'website', locale: 'en_IN' },
+    openGraph: { title, description: service.descriptionEn, url, siteName: 'False Ceiling Service', type: 'website', locale: 'en_IN' },
     twitter: { card: 'summary_large_image', title, description: service.descriptionEn },
   }
 }
@@ -41,7 +41,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     <Navbar />
     <main className="bg-sky-glow pt-28">
       <div className="mx-auto max-w-7xl px-5 pb-10 lg:px-8">
-        <Link href="/#services" className="inline-flex items-center gap-1.5 text-sm font-bold text-primary transition hover:underline"><ArrowLeft size={16} /> All Services</Link>
+        <Link href="/services" className="inline-flex items-center gap-1.5 text-sm font-bold text-primary transition hover:underline"><ArrowLeft size={16} /> All Services</Link>
         <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-tight tracking-tight sm:text-5xl">{service.name}<Hindi>{service.descriptionHi}</Hindi></h1>
         <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">{service.descriptionEn}</p>
         <div className="mt-7 flex flex-wrap gap-3"><CTA kind="call"><Phone data-icon="inline-start" /> Call Now</CTA><CTA service={service.name}>Send Photo on WhatsApp</CTA></div>

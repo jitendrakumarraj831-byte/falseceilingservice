@@ -1,6 +1,7 @@
 import { services, type Service } from './services'
+import { SITE_URL } from './site'
 
-export const SITE_URL = 'https://falseceilingservice.com'
+export { SITE_URL }
 export const BUSINESS_NAME = 'Arbaz – False Ceiling & Interior Services'
 export const BUSINESS_PHONE = '+917258951213'
 export const BUSINESS_LOGO = `${SITE_URL}/apple-icon`
@@ -94,7 +95,7 @@ export function getBreadcrumbSchema(service: Pick<Service, 'slug' | 'name'>) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/#services` },
+      { '@type': 'ListItem', position: 2, name: 'Services', item: `${SITE_URL}/services` },
       { '@type': 'ListItem', position: 3, name: service.name, item: `${SITE_URL}/services/${service.slug}` },
     ],
   }
